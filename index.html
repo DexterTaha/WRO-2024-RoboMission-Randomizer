@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <title>WRO 2024 RoboMission Game Randomizer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-2">
+                <p class="h4 d-sm-block d-md-none">WRO 2024 RoboMission Game Randomize</p>
+                <p class="h1 display-4 d-none d-md-block">WRO 2024 RoboMission Game Randomizer</p>
+                <div class="row justify-content-center g-2">
+                    <div class="col-md-5 form-floating">
+                        <select onchange="changeCategory(this.value)" class="form-select" id="Category">
+                            <option value="0">Elementary</option>
+                            <option value="1" selected>Junior</option>
+                            <option value="2">Senior</option>
+                        </select>
+                        <label for="Category">Competition Category</label>
+                    </div>
+                    <button type="button" class="col-md-3 mx-md-2 btn btn-primary" onclick="random()">All Random</button>
+                    <button type="button" class="col-md-3 mx-md-2 btn btn-primary ml-2" onclick="screenshot()">Save Capture</button>
+                </div>
+                <div class="map" id="map_elementary">
+                    <div class="map_elementary_vegetables"></div>
+                    <div class="map_elementary_vegetables"></div>
+                    <div class="map_elementary_vegetables"></div>
+                    <div class="map_elementary_vegetables"></div>
+                    <div id="map_elementary_green_and_dirts"></div>
+                    <img style="z-index: -1;" class="img-fluid" src="./media/map_elementary.jpg">
+                </div>
+                <div class="map" id="map_junior">
+                    <img style="z-index: -1;" class="img-fluid" src="./media/map_junior.jpg">
+                    <div id="map_junior_park"></div>
+                </div>
+                <div class="map select" id="map_senior">
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_blocks"></div>
+                    <div class="map_senior_startareas"></div>
+                    <div class="map_senior_startareas"></div>
+                    <img style="z-index: -1;" class="img-fluid" src="./media/map_senior.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="copyright-content">
+            <p>© Copyright 2024  |  All Rights Reserved by <a href="https://dextertaha.github.io/Taha-Taidi-Laamiri-portfolio/" target="_blank">Taha TAIDI LAAMIRI</a> </p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.19.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

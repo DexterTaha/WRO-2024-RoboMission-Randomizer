@@ -1,0 +1,215 @@
+/* Common map styles */
+.map {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.map:not(.select) {
+    display: none;
+}
+
+.map * {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#map_senior {
+    margin-top: 50px;
+}
+
+#map_junior {
+    margin-top: 50px;
+}
+
+#map_elementary {
+    margin-top: 50px;
+}
+
+/* Junior map styles */
+#map_junior_park {
+    width: 19.5%;
+    height: 4.4%;
+    position: absolute;
+    left: 22.5%;
+    top: 90.2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#map_junior_park > img {
+    height: 100%;
+}
+
+/* Senior map styles */
+.map_senior_blocks {
+    height: 4.5%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.map_senior_blocks > img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.map_senior_blocks:nth-child(1) {
+    left: 57.8%;
+    top: 91.1%;
+}
+
+.map_senior_blocks:nth-child(2) {
+    left: 62%;
+    top: 91.1%;
+}
+
+.map_senior_blocks:nth-child(3) {
+    left: 35.9%;
+    top: 4.6%;
+}
+
+.map_senior_blocks:nth-child(4) {
+    left: 40%;
+    top: 4.6%;
+}
+
+.map_senior_blocks:nth-child(5) {
+    left: 3.1%;
+    top: 19%;
+}
+
+.map_senior_blocks:nth-child(6) {
+    left: 3.1%;
+    top: 27.5%;
+}
+
+.map_senior_blocks:nth-child(7) {
+    left: 86.1%;
+    top: 10.6%;
+}
+
+.map_senior_blocks:nth-child(8) {
+    left: 86.1%;
+    top: 19.3%;
+}
+
+.map_senior_blocks:nth-child(9) {
+    left: 93%;
+    top: 72.8%;
+}
+
+.map_senior_blocks:nth-child(10) {
+    left: 93%;
+    top: 81.5%;
+}
+
+.map_senior_startareas {
+    height: 24%;
+    width: 11.8%;
+    position: absolute;
+}
+
+.map_senior_startareas > img {
+    height: 100%;
+}
+
+.map_senior_startareas:nth-child(11) {
+    left: 63.2%;
+    top: 4.5%;
+}
+
+.map_senior_startareas:nth-child(12) {
+    left: 25.2%;
+    top: 71.3%;
+}
+
+/* Elementary map styles */
+.map_elementary_vegetables {
+    height: 3%;
+    width: 1.5%;
+    position: absolute;
+}
+
+.map_elementary_vegetables > img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.map_elementary_vegetables:nth-child(1) {
+    left: 74.3%;
+    top: 10.9%;
+}
+
+.map_elementary_vegetables:nth-child(2) {
+    left: 78.1%;
+    top: 10.9%;
+}
+
+.map_elementary_vegetables:nth-child(3) {
+    left: 6.2%;
+    top: 45%;
+}
+
+.map_elementary_vegetables:nth-child(4) {
+    left: 40%;
+    top: 49.3%;
+}
+
+#map_elementary_green_and_dirts {
+    position: absolute;
+    height: 8.5%;
+    width: 51.8%;
+    left: 22.5%;
+    top: 85.9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#map_elementary_green_and_dirts > div {
+    width: 18.2%;
+}
+
+#map_elementary_green_and_dirts > img {
+    height: 100%;
+}
+
+.copyright-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.copyright-content a {
+    color: #007bff;
+    text-decoration: none; 
+}
+
+.copyright-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styles for phone screens */
+@media (max-width: 600px) {
+    .copyright-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .copyright-content p {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .copyright-content a {
+        font-size: 16px;
+    }
+}
