@@ -32,7 +32,7 @@ function random() {
 
     // Junior map
     clearChildren(objectAreas.junior);
-    randomColorArray(["blue", "green", "red"], 2).forEach(color => {
+    randomColorArray(["blue", "black", "black"], 2).forEach(color => {
         const img = createImageElement(`./media/${color}.jpg`);
         objectAreas.junior.append(img);
     });
